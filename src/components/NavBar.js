@@ -1,15 +1,17 @@
+// src/components/NavBar.js
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const NavBar = () => {
-  return (
-    <nav>
-      <NavLink to="/" activeClassName="active-link" exact>Home</NavLink>
-      <NavLink to="/directors" activeClassName="active-link">Directors</NavLink>
-      <NavLink to="/actors" activeClassName="active-link">Actors</NavLink>
-    </nav>
-  );
-}
+const NavBar = () => (
+  <div className="navbar">
+    <NavLink to="/">Home</NavLink>
+    <NavLink to="/actors">Actors</NavLink>
+    <NavLink to="/directors">Directors</NavLink>
+    <NavLink to="/movie">Movie</NavLink>
+  </div>
+);
 
 export default NavBar;
+
+
 

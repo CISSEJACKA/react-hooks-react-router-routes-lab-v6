@@ -1,17 +1,19 @@
-import { Route } from 'react-router-dom';
+// src/routes.js
 import Home from './pages/Home';
-import Actors from './pages/Actors';
 import Directors from './pages/Directors';
 import Movie from './pages/Movie';
 import ErrorPage from './pages/ErrorPage';
+import Actors from './pages/Actors';
 
 const routes = [
-  { path: "/", component: Home, exact: true },
-  { path: "/actors", component: Actors },
-  { path: "/directors", component: Directors },
-  { path: "/movie/:id", component: Movie },
-  { path: "*", component: ErrorPage },
+  { path: '/', element: <Home /> },
+  { path: '/directors', element: <Directors /> },
+  { path: '/movie/:id', element: <Movie /> },
+  { path: '/actors', element: <Actors /> },
+  { path: '*', element: <ErrorPage /> }
 ];
 
 export default routes;
+
+
 
